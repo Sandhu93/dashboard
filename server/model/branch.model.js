@@ -1,0 +1,37 @@
+
+const mongoose = require('mongoose');
+//import mongoose from "mongoose";
+
+const branch = new mongoose.Schema({
+  Branch_Name: String,
+  Code: String,
+  Region: String,
+  Hub: String,
+  Vertical: String,
+  Zone: String,
+  State: String,
+  District: String,
+  City : String,
+  Building_Name: String,
+  Pin_Code: Number,
+  Risk_Category: String,
+  Branch_Locality: String,
+  Post_Office: String,
+  Mail_Address: String,
+  Contact_Person: String,
+  Mobile_Number: Number,
+  Branch_Land_Phone: Number,
+  Branch_Mobile: Number,
+  Current_Status: String,
+  Support_Type: String,
+  Connectivity_Type : String,
+  Device_Id : {
+    type: mongoose.Types.ObjectId,
+    default:null
+  }
+})
+
+branch.set('versionKey', false);
+
+module.exports = mongoose.model('Branch', branch);
+//export default mongoose.model('Branch', branch);

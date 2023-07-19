@@ -1,0 +1,14 @@
+.dashboard-top{
+  padding: 20px;
+  overflow: auto;
+}
+.chart-box-top{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.widgets {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
